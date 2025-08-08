@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Summarizer</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>News Summarizer</h1>
+    </header>
+    <main>
+        <section id="input-section">
+            <h2>Input Section</h2>
+            <div>
+                <label>Select Input Method:</label>
+                <div>
+                    <input type="radio" name="input-method" value="paste" checked> Paste Text
+                    <input type="radio" name="input-method" value="upload"> Upload Document
+                    <input type="radio" name="input-method" value="url"> Enter URL
+                </div>
+            </div>
+            <div id="input-area">
+                <textarea id="text-input" placeholder="Paste your text here..."></textarea>
+                <input type="file" id="file-input" accept=".txt, .docx, .pdf" style="display: none;">
+                <input type="text" id="url-input" placeholder="Enter URL here..." style="display: none;">
+            </div>            
+            <div>
+                <label>Choose Summarization Type:</label>
+                <div>
+                    <input type="radio" name="summary-type" value="extractive" checked> Extractive
+                    <input type="radio" name="summary-type" value="abstractive"> Abstractive
+                </div>
+                <p><span style="color:#003366; font-weight: bold;">Extractive:</span> Selects and compiles key sentences directly from the text to create a summary.</p>
+                <p><span style="color:#003366; font-weight: bold;">Abstractive:</span> Generates a new summary by paraphrasing the main ideas of the text.</p>
+            </div>
+            <button id="generate-summary">Generate Summary</button>
+        </section>
+        <section id="output-section">
+            <h2>Generated Summary</h2>
+            <textarea id="summary-output" readonly></textarea>
+            <button id="download-summary">Download Summary</button>
+        </section>
+    </main>
+    <script src="../static/script.js"></script>
+</body>
+</html>

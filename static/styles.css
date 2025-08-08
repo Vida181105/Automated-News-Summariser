@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background for a softer look */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #003366; /* Dark blue header */
+    color: white;
+    padding: 15px 0; /* Increased padding for a more spacious header */
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+main {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px; /* Increased padding for more space inside */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Optional max width for larger screens */
+    margin: 0 auto; /* Center the main section */
+}
+
+section {
+    margin-bottom: 30px; /* Increased spacing between sections */
+}
+
+h2 {
+    color: #003366; /* Dark blue for section titles */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px; /* Space below labels */
+    display: block; /* Ensures label takes full width for spacing */
+}
+
+textarea, input[type="text"] {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 20px; /* Space below text areas */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Inner spacing */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+input[type="file"] {
+    margin-top: 10px;
+    margin-bottom: 20px; /* Space below file input */
+}
+
+#url-input {
+    width: 100%;          /* Full width */
+    height: 30px;        /* Height for a single line */
+    margin-top: 10px;    /* Space above */
+    margin-bottom: 20px; /* Space below */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px;  /* Rounded corners */
+    padding: 5px;        /* Inner spacing */
+    box-sizing: border-box; /* Include padding in width */
+    overflow-x: auto;    /* Horizontal scroll if needed */
+    white-space: nowrap;  /* Prevent line breaks */
+}
+
+input[type="radio"] {
+    margin: 0 10px;
+}
+
+button {
+    background-color: #0056b3; /* Blue button */
+    color: white;
+    border: none;
+    padding: 12px 15px; /* Increased padding for a larger button */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0; /* Space above and below buttons */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth color change */
+}
+
+button:hover {
+    background-color: #003d80; /* Darker blue on hover */
+}
+
+#summary-output {
+    height: 150px;
+    resize: none; /* Prevent resizing */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Inner spacing */
+    box-sizing: border-box; /* Include padding in width */
+    margin-bottom: 20px; /* Space below summary output */
+}
+
+/* Add responsive design */
+@media (max-width: 600px) {
+    main {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    button {
+        width: 100%; /* Full width on small screens */
+    }
+}
