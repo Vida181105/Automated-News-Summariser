@@ -6,10 +6,10 @@ This project is a web-based application that summarizes news articles using both
 
 ## Features
 
-- 🔍 **Extractive Summarization** using TextRank with TF-IDF scoring
-- 🤖 **Abstractive Summarization** using T5 Transformer from Hugging Face
-- 🌐 Web Interface: Flask-powered frontend with clean HTML/CSS/JS
-- 📂 Input via file upload or direct text box
+- **Extractive Summarization** using TextRank with TF-IDF scoring
+- **Abstractive Summarization** using T5 Transformer from Hugging Face
+- Web Interface: Flask-powered frontend with clean HTML/CSS/JS
+- Input via file upload or direct text box
 
 ---
 
